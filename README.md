@@ -6,7 +6,7 @@ Computer Game Programming - Final Project
 Starting Scene: Main Menu 
 
 ## Short description
-Cookie Hunter is a 3D platformer inspired by [this](https://www.youtube.com/watch?v=tw7Os-_BJMo) episode of Clueless Gamer by Conan O'Brien. Conan is NOT a gamer and hence comments that he wishes for a simple game involving one simple button, "eat cookie." I took this inspiration and ran with it. In Cookie Hunter, The player is dropped into a forest with one objective, collect and eat as many delicious cookies as possible before time runs out. It is important to eat as many as possible, because when the sun goes down, the cookies that the player did not eat come to life and haunts them. The player must survive the night so that they can continue to munch on delicious cookies in the morning. Every cookie eaten adds to the player’s score, so they should eat as many as they can! 
+Cookie Hunter is a 3D platformer inspired by [this](https://www.youtube.com/watch?v=tw7Os-_BJMo) episode of Clueless Gamer by Conan O'Brien. Conan is NOT a gamer and hence comments that he wishes for a simple game involving one simple button, "eat cookie." I took this inspiration and ran with it. In Cookie Hunter, the player is dropped into a forest with one objective, collect and eat as many delicious cookies as possible before time runs out. It is important to eat as many as possible, because when the sun goes down, the cookies that the player did not eat come to life and haunt them. The player must survive the night so that they can continue to munch on delicious cookies in the morning. Every cookie eaten adds to the player’s score, so they should eat as many as they can! 
 
 ## Known Bugs and Issues
 - Sometimes the cookie AI lags and bugs during phase two. This is most likely due to too many navMeshAgent calculations occuring at once. I took precautions to combat this, but sometimes an agent will get caught on a single calculation and will remain totally unresponsive until it is finished calculating
@@ -40,6 +40,12 @@ These are just general features and topics that should be recognized and discuss
 	- White Cookies are thesame as Brown, but they have a short range for aggro and are slightly faster than the brown. It is also possible to break their aggro on the player if the player gets far enough away. 
 	- Violet Cookies are hooked onto the player from the get-go and add intensity to the game as they will constantly chase the player no matter what. 
 	- Green Cookies lay on the ground and hide until the player gets close to them. At this point, they jump out and try to catch the player by surprise. They are tricky, and the are fast. It is also possible to break their aggro on the player if the player gets far enough away.  
+ 
+ ## Relevant Files
+Assets is the only real directory with relevant code
+ - "Scenes" contains the starting Unity Scene -> Main Menu
+ - "Scipts" contains all the C# scripts that manipulate and control the game objects of the scene. Without them, there would be no game. 
+ - Everything else in Assets is mostly prefabs, textures, models, and the like.
  
  ## External resources 
 - The Unity Manual  
